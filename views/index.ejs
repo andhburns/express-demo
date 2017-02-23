@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Todo App</title>
+  <link href = 'stylesheet'>
+  <!-- Latest compiled and minified Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+
+  </head>
+<body class="container">
+
+<div class="jumbotron">
+  <div class="container">
+    HELLOOOO!!!
+  </div>
+</div>
+
+
+  <div class="container">
+    <div id="app">
+      <% for (var i = 0; i < gifs.length; i++) { %>
+        <div class="row">
+          <div class="col">
+        <img src= <%= gifs[i].url %> >
+         <div class="caption"> <%= gifs[i].description %> </div>
+         </div>
+        </div>
+      <% } %>
+    </div>
+    <!-- <div class "thumbnail" id="app">
+      <% for (var i = 0; i < gifs.length; i++) { %>
+        <img src= <%= gifs[i].url %> >
+      <% } %>
+    </div>
+  </div> -->
+
+
+
+<style>
+  /*#name:hover {
+    border: 2px solid;
+    border-color: rgba(239, 11, 11, 0.3);
+  }*/
+  .jumbotron {
+    /*background-image: url("http://montanacodeschool.com/wp-content/uploads/2016/08/MCS_LOGO_v1-1.png");*/
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*background-size: 100% 100%;*/
+    text-align: center;
+    /*float: left;*/
+    overflow: hidden;
+  }
+
+   img {
+    width: 30%;
+    height: 30vh;
+    /*float: left;*/
+    margin: 1%;
+    border-radius: 15%;
+  }
+
+  /*caption {
+    text-align: center;
+  }*/
+
+  /*#name{
+    background-color: pink;
+  }*/
+
+</style>
+
+</body>
+<script src="https://code.jquery.com/jquery-2.2.0.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+<script src="https://fb.me/react-0.13.3.js"></script>
+<script src="https://fb.me/JSXTransformer-0.13.3.js"></script>
+
+<script  type="text/jsx" src="../index.js"></script>
+</html>
